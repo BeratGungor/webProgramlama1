@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#f1f1f1;
+  border: 1px solid green;
+  text-align: center;
+  margin : 10px;
+  float:left;
+  width:30%; 
+}
+
+.main {
+  border: 1px solid green;
+  text-align: center;
+  
+  margin : 10px;
+  float:left;
+  width:30%; 
+}
+
+.right {
+  border: 1px solid green;
+  text-align: center;
+  
+  margin : 10px;
+  float:left;
+  width:30%; 
+}
+.ustkisim {
+  text-align: center;
+  padding: 20px;
+  margin :0 0 5px 0 ;
+  float: center;
+  width:100%; 
+}
+.altkisim {
+  text-align: Left;
+  padding: 20px;
+  margin :100 0 5px 0 ;
+  float: center;
+  width:100%; 
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+<body>
+
+<div class="ustkisim">
+	<img src="C:\Users\berat\Desktop\Yeni klasör\bm.png" alt="bm logo">
+  <h2>Erciyes Üniversitesi Bilgisayar Mühendiliği Bölümü Web Programlama 1 Dersi final sorusu</h2>
+  <h3>Dr. Öğr. Üyesi Fehim KÖYLÜ</h3>
+  <h1>Alışveriş Uygulaması</h1>
+  <p>Vermek istediğiniz siparişler için aşağıdaki listeden seçerek adedini belirtiniz.</p>
+</div>
+
+<div class="left">
+ 
+  <h3 style ="background-color:#f1f1f1;border: 1px solid gray;">Ekmek</h3>
+  
+  <p style="font-size : 24px"><b>2₺</b> / adet</p>
+  <pre style="font-size : 14px">Somun Ekmek
+  200 gr
+  </pre>
+  <button style="width: 100%; font-size : 20px;background-color:blue;color : white">Sepete ekle</button>
+</div>
+
+<div class="main">
+  <h3 style ="background-color:#f1f1f1;border: 1px solid gray;">Çikolata</h3>
+  
+  <p style="font-size : 24px"><b>5₺</b> / adet</p>
+  <pre style="font-size : 14px">Bitter Çikolata
+  50 gr
+  </pre>
+  <button style="width: 100%; font-size : 20px;background-color:blue;color : white">Sepete ekle</button>
+</div>
+
+<div class="right">
+  <h3 style ="background-color:#f1f1f1;border: 1px solid gray;">Domates</h3>
+  
+  <p style="font-size : 24px"><b>6₺</b> / kg</p>
+  <pre style="font-size : 14px">  Domates
+  Antalya Sera
+  </pre>
+  <button style="width: 100%; font-size : 20px;background-color:blue;color : white">Sepete ekle</button>
+  <br>
+</div>
+
+<br>
+<div class="altkisim">
+  
+  <p style="font-size : 24px">Siparişleriniz</p>
+  <p style="font-size : 18px">Somun Ekmek (2) 4₺ </p>
+  <p style="font-size : 18px">Domates (1) 6₺ </p>
+  <p style="font-size : 18px">Çikolata (1) 5₺ </p>
+  <p style="font-size : 18px">indirim kuponu 1₺ </p>
+   <p style="font-size : 18px">Toplam Fiyat 14₺ </p>
+  
+</div>
+
+</body>
+</html>
